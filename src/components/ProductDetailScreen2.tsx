@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ArrowLeft, Home, Search, ShoppingBag, Heart, Share, X, ChevronRight } from "lucide-react";
+import { ArrowLeft, Home, Search, ShoppingBag, Heart, X, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Card, CardContent } from "./ui/card";
@@ -36,7 +36,6 @@ const sizeRows = [
 
 export const ProductDetailScreen2 = ({
   onClose,
-  onHomeClick,
   onAIFittingClick,
 }: ProductDetailScreen2Props): JSX.Element => {
   const [activeSizeTab, setActiveSizeTab] = useState("actual");
@@ -54,9 +53,9 @@ export const ProductDetailScreen2 = ({
           </div>
 
           <div className="flex items-center gap-3 h-[11px]">
-            <img src="/Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
-            <img src="/Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
-            <img src="/Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
+            <img src="Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
+            <img src="Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
+            <img src="Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
           </div>
         </div>
       </div>
@@ -91,7 +90,7 @@ export const ProductDetailScreen2 = ({
             <img
               className="w-full h-[470px] object-cover"
               alt="데님 와이드 팬츠"
-              src="/IMG_6677_3.png"
+              src="IMG_6677_3.png"
             />
 
             <div className="flex w-[calc(100%-33px)] items-center justify-between absolute bottom-[20px] left-[12px]">
@@ -413,7 +412,7 @@ export const ProductDetailScreen2 = ({
               <img
                 className="w-[246px] h-[289px] object-contain"
                 alt="Size guide diagram"
-                src="/PantsSize.png"
+                src="PantsSize.png"
               />
             </div>
           </div>

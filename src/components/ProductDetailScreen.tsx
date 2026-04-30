@@ -39,9 +39,9 @@ export const ProductDetailScreen = ({ onClose, onAIFittingClick, onEditMeasureme
           </div>
 
           <div className="flex items-center gap-3 h-[11px]">
-            <img src="/Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
-            <img src="/Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
-            <img src="/Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
+            <img src="Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
+            <img src="Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
+            <img src="Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@ export const ProductDetailScreen = ({ onClose, onAIFittingClick, onEditMeasureme
             <img
               className="w-full h-[470px] object-cover"
               alt="Product"
-              src="/man_pants.png"
+              src="man_pants.png"
             />
 
             <div className="flex w-[calc(100%_-_33px)] items-center justify-between absolute bottom-[17px] left-[17px]">
@@ -359,7 +359,7 @@ export const ProductDetailScreen = ({ onClose, onAIFittingClick, onEditMeasureme
               <img
                 className="w-[246px] h-[289px] object-contain"
                 alt="Size guide diagram"
-                src="/PantsSize.png"
+                src="PantsSize.png"
               />
             </div>
           </div>

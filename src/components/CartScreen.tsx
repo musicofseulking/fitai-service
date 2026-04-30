@@ -17,7 +17,6 @@ interface CartScreenProps {
 
 export const CartScreen = ({
   onClose,
-  onHomeClick,
   onPurchaseClick,
   selectedSize,
   quantity = 1,
@@ -43,7 +42,7 @@ export const CartScreen = ({
 
   const getProductImage = () => {
     if (productImage) return productImage;
-    return productType === "male" ? "/man_pants.png" : "/IMG_6677_3.png";
+    return productType === "male" ? "man_pants.png" : "IMG_6677_3.png";
   };
 
   const displayProductName = getProductName();
@@ -63,9 +62,9 @@ export const CartScreen = ({
           </div>
 
           <div className="flex items-center gap-3 h-[11px]">
-            <img src="/Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
-            <img src="/Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
-            <img src="/Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
+            <img src="Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
+            <img src="Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
+            <img src="Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
           </div>
         </div>
       </div>

@@ -7,17 +7,17 @@ interface ProductItem {
 const productItems: ProductItem[] = [
   {
     id: 1,
-    image: "/man_pants.png",
+    image: "man_pants.png",
     name: "남성 스트레이트 치노 팬츠 [베이지]",
   },
   {
     id: 2,
-    image: "/IMG_6677_3.png",
+    image: "IMG_6677_3.png",
     name: "[한소희 PICK] 우먼즈 커브드 데님 팬츠 [미디엄 인디고]",
   },
   {
     id: 3,
-    image: "/Knit_1.png",
+    image: "Knit_1.png",
     name: "스트라이프 니트",
   },
 ];

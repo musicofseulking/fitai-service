@@ -40,7 +40,7 @@ export const MeasurementGuideModal = ({ isOpen, onClose }: MeasurementGuideModal
 
   const pages = [
     {
-      image: "/Measurement Guide_1.png",
+      image: "Measurement Guide_1.png",
       items: [
         { title: "1. 머리 둘레", desc: "이마와 뒤통수를 따라 머리의 둘레가 가장 넓은 부분으로 측정해주세요." },
         { title: "2. 어깨 너비", desc: "양쪽 어깨 끝에서 끝까지의 가로 길이를 측정해주세요." },
@@ -50,7 +50,7 @@ export const MeasurementGuideModal = ({ isOpen, onClose }: MeasurementGuideModal
       ]
     },
     {
-      image: "/Measurement Guide_2.png",
+      image: "Measurement Guide_2.png",
       items: [
         { title: "6. 엉덩이 둘레", desc: "엉덩이에서 가장 튀어나온 부분의 둘레를 측정해주세요." },
         { title: "7. 허벅지 둘레", desc: "허벅지의 가장 두꺼운 부분의 둘레를 측정해주세요." },

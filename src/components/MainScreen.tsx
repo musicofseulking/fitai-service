@@ -28,9 +28,9 @@ export const MainScreen = ({ onProductClick, onProduct2Click }: MainScreenProps)
             <span className="font-bold text-white text-[15px]">9:41</span>
           </div>
           <div className="flex items-center gap-3 h-[11px]">
-            <img src="/Mobile Signal(BlackScreen).png" alt="Signal" className="h-full object-contain" />
-            <img src="/Wifi(BlackScreen).png" alt="Wifi" className="h-full object-contain" />
-            <img src="/Battery(BlackScreen).png" alt="Battery" className="h-full object-contain" />
+            <img src="Mobile Signal(BlackScreen).png" alt="Signal" className="h-full object-contain" />
+            <img src="Wifi(BlackScreen).png" alt="Wifi" className="h-full object-contain" />
+            <img src="Battery(BlackScreen).png" alt="Battery" className="h-full object-contain" />
           </div>
         </div>
 
@@ -82,7 +82,7 @@ export const MainScreen = ({ onProductClick, onProduct2Click }: MainScreenProps)
 
       <div className="flex flex-col w-full pt-[182px] flex-1 overflow-y-auto custom-scrollbar">
         <div className="relative w-full h-[250px] bg-[#e1e2d2] grayscale">
-          <img src="/IMG_6676_2.png" alt="Hero Banner" className="w-full h-full object-cover object-top" />
+          <img src="IMG_6676_2.png" alt="Hero Banner" className="w-full h-full object-cover object-top" />
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
 

@@ -5,6 +5,7 @@ import { PurchaseModal } from "./PurchaseModal";
 import { OrderScreen } from "./OrderScreen";
 import { CartScreen } from "./CartScreen";
 import { OrderCompleteScreen } from "./OrderCompleteScreen";
+import { FitGuideCards } from "./FitGuideCards";
 
 interface AIFittingResultScreenFemaleProps {
   onClose?: () => void;
@@ -19,7 +20,6 @@ interface AIFittingResultScreenFemaleProps {
 export const AIFittingResultScreenFemale = ({
   onClose,
   onHomeClick,
-  onPurchaseClick,
   onEditMeasurements,
   height = "161cm",
   weight = "53.5kg",
@@ -35,17 +35,17 @@ export const AIFittingResultScreenFemale = ({
   const sizes = [25, 26, 27, 28, 29];
 
   const size28Images = [
-    "/female1_1.png",
-    "/female1_2.png",
-    "/female1_3.png",
-    "/female1_4.png"
+    "female1_1.png",
+    "female1_2.png",
+    "female1_3.png",
+    "female1_4.png"
   ];
   
   const size26Images = [
-    "/female1_5.png",
-    "/female1_6.png",
-    "/female1_7.png",
-    "/female1_8.png"
+    "female1_5.png",
+    "female1_6.png",
+    "female1_7.png",
+    "female1_8.png"
   ];
 
   const viewImages = selectedSize === 26 ? size26Images : size28Images;
@@ -101,9 +101,9 @@ export const AIFittingResultScreenFemale = ({
           </div>
 
           <div className="flex items-center gap-3 h-[11px]">
-            <img src="/Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
-            <img src="/Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
-            <img src="/Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
+            <img src="Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
+            <img src="Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
+            <img src="Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
           </div>
         </div>
       </div>
@@ -197,113 +197,14 @@ export const AIFittingResultScreenFemale = ({
           })}
         </div>
 
-        <div className="px-4 py-2 space-y-2">
-          <div className="border border-[#e6e6e680] rounded-lg p-4">
-            <h3 className="font-medium text-black text-base mb-2">
-              추천 사이즈 / 핏 안내
-            </h3>
-            {selectedSize === 26 ? (
-              <ul className="space-y-1 text-xs text-black">
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>26 사이즈는 타이트하게 착용 가능해요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>27 사이즈는 루즈하게 착용 가능해요</span>
-                </li>
-              </ul>
-            ) : selectedSize === 28 ? (
-              <ul className="space-y-1 text-xs text-black">
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>28 사이즈는 편안하고 안정적인 핏으로 착용 가능해요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>26 사이즈는 많이 작고 타이트할 수 있어요</span>
-                </li>
-              </ul>
-            ) : (
-              <ul className="space-y-1 text-xs text-black">
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>27 사이즈는 루즈하게 착용 가능해요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>28 사이즈는 편안하고 안정적인 핏으로 착용 가능해요</span>
-                </li>
-              </ul>
-            )}
-          </div>
-
-          <div className="border border-[#e6e6e680] rounded-lg p-4">
-            <h3 className="font-medium text-black text-base mb-2">
-              부위별 핏 안내
-            </h3>
-            {selectedSize === 26 ? (
-              <ul className="space-y-1 text-xs text-black">
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>허리 : 딱 맞아요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>엉덩이 : 타이트하게 맞아요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>허벅지 : 타이트하게 맞아요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>총장 : 발등에 닿지만 바닥에 끌리지 않을 기장감이에요</span>
-                </li>
-              </ul>
-            ) : selectedSize === 28 ? (
-              <ul className="space-y-1 text-xs text-black">
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>허리 : 편안하게 맞아요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>엉덩이 : 안정감 있게 맞아요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>허벅지 : 안정감 있게 맞아요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>총장 : 발등에 닿지만 바닥에 끌리지 않을 기장감이에요</span>
-                </li>
-              </ul>
-            ) : (
-              <ul className="space-y-1 text-xs text-black">
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>허리 : 편안하게 맞아요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>엉덩이 : 살짝 타이트해요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>허벅지 : 조금 타이트해요</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1 mt-[1px]">•</span>
-                  <span>총장 : 발등에 닿지만 바닥에 끌리지 않을 기장감이에요</span>
-                </li>
-              </ul>
-            )}
-          </div>
-        </div>
+        <FitGuideCards
+          productType="female"
+          selectedSize={selectedSize}
+          height={height}
+          weight={weight}
+          bodyType={bodyType}
+        />
       </div>
-
       <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] flex items-center justify-center px-4 pt-4 pb-6 bg-white z-[2]">
         <Button
           onClick={() => setIsPurchaseModalOpen(true)}

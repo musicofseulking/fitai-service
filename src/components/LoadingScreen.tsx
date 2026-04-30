@@ -7,7 +7,7 @@ interface LoadingScreenProps {
   onHome?: () => void;
 }
 
-export const LoadingScreen = ({ onClose, onComplete, onHome }: LoadingScreenProps): JSX.Element => {
+export const LoadingScreen = ({ onClose, onComplete }: LoadingScreenProps): JSX.Element => {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (onComplete) {
@@ -27,9 +27,9 @@ export const LoadingScreen = ({ onClose, onComplete, onHome }: LoadingScreenProp
           </div>
 
           <div className="flex items-center gap-3 h-[11px]">
-            <img src="/Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
-            <img src="/Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
-            <img src="/Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
+            <img src="Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
+            <img src="Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
+            <img src="Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
           </div>
         </div>
       </div>

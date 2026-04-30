@@ -7,7 +7,7 @@ interface AIFittingScreenProps {
   onHomeClick?: () => void;
 }
 
-export const AIFittingScreen = ({ onClose, onInputClick, onHomeClick }: AIFittingScreenProps): JSX.Element => {
+export const AIFittingScreen = ({ onClose, onInputClick }: AIFittingScreenProps): JSX.Element => {
   return (
     <div className="w-full max-w-[390px] mx-auto flex flex-col bg-white relative min-h-screen">
       <div className="fixed w-full max-w-[390px] top-0 left-1/2 -translate-x-1/2 h-[52px] z-[4] flex bg-white border-b border-gray-100">
@@ -17,9 +17,9 @@ export const AIFittingScreen = ({ onClose, onInputClick, onHomeClick }: AIFittin
           </div>
 
           <div className="flex items-center gap-3 h-[11px]">
-            <img src="/Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
-            <img src="/Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
-            <img src="/Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
+            <img src="Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
+            <img src="Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
+            <img src="Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
           </div>
         </div>
       </div>

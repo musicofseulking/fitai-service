@@ -1,4 +1,4 @@
-import { ArrowLeft, Home, HelpCircle } from "lucide-react";
+import { ArrowLeft, Home } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState, useEffect } from "react";
 import { MeasurementGuideModal } from "./MeasurementGuideModal";
@@ -11,7 +11,7 @@ interface BodyMeasurementsScreenProps {
   initialGender?: "male" | "female" | "female2" | null;
 }
 
-export const BodyMeasurementsScreen = ({ onClose, onSaveClick, productType = "male", onHomeClick, initialGender }: BodyMeasurementsScreenProps): JSX.Element => {
+export const BodyMeasurementsScreen = ({ onClose, onSaveClick, productType = "male", initialGender }: BodyMeasurementsScreenProps): JSX.Element => {
   const [selectedGender, setSelectedGender] = useState<"male" | "female" | "female2" | null>(null);
   const [showGuideModal, setShowGuideModal] = useState(false);
 
@@ -112,9 +112,9 @@ export const BodyMeasurementsScreen = ({ onClose, onSaveClick, productType = "ma
           </div>
 
           <div className="flex items-center gap-3 h-[11px]">
-            <img src="/Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
-            <img src="/Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
-            <img src="/Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
+            <img src="Mobile Signal(WhiteScreen).png" alt="Signal" className="h-full object-contain" />
+            <img src="Wifi(WhiteScreen).png" alt="Wifi" className="h-full object-contain" />
+            <img src="Battery(WhiteScreen).png" alt="Battery" className="h-full object-contain" />
           </div>
         </div>
       </div>

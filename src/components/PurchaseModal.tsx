@@ -19,8 +19,6 @@ export const PurchaseModal = ({
   onPurchaseClick,
   onCartClick,
   selectedSize = 28,
-  height = "161cm",
-  weight = "53.5kg",
   productType = "female",
 }: PurchaseModalProps): JSX.Element | null => {
   const [quantity, setQuantity] = useState(1);
