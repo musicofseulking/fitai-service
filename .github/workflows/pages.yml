@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: npm run build:pages
         env:
-          VITE_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          VITE_FIT_API_URL: ${{ vars.FIT_API_URL }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
