@@ -3,6 +3,7 @@ import { ArrowLeft, Home, Search, ShoppingBag, Heart, X, ChevronRight } from "lu
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Card, CardContent } from "./ui/card";
+import { CoachBubble } from "./CoachBubble";
 
 interface ProductDetailScreen2Props {
   onClose?: () => void;
@@ -94,7 +95,7 @@ export const ProductDetailScreen2 = ({
             />
 
             <div className="flex w-[calc(100%-33px)] items-center justify-between absolute bottom-[20px] left-[12px]">
-              <div className="p-[2px] bg-gradient-to-br from-pink-400 via-purple-500 to-blue-500 bg-[length:200%_200%] animate-[gradient-shift_3s_ease-in-out_infinite] rounded transition-all duration-300 hover:scale-105 hover:animate-[shimmer_1.5s_ease-in-out_infinite] shadow-lg">
+              <div className="relative p-[2px] bg-gradient-to-br from-pink-400 via-purple-500 to-blue-500 bg-[length:200%_200%] animate-[gradient-shift_3s_ease-in-out_infinite] rounded transition-all duration-300 hover:scale-105 hover:animate-[shimmer_1.5s_ease-in-out_infinite] shadow-lg">
                 <Button
                   onClick={onAIFittingClick}
                   variant="outline"
@@ -102,6 +103,7 @@ export const ProductDetailScreen2 = ({
                 >
                   AI 피팅하기
                 </Button>
+                <CoachBubble text="AI 피팅하기를 눌러 보세요" align="left" className="absolute bottom-full left-0 mb-2.5" />
               </div>
 
               <div className="flex flex-col w-[50px] items-center justify-center gap-2 px-2.5 py-1 bg-[#0f0f0f80] rounded-2xl overflow-hidden">

@@ -1,3 +1,5 @@
+import { CoachBubble } from "./CoachBubble";
+
 interface ProductItem {
   id: number;
   image: string;
@@ -100,6 +102,7 @@ export const DailyStyleRecommendationSection = ({ onProductClick, onProduct2Clic
             </div>
           ))}
         </div>
+        <CoachBubble text="반짝이는 상품을 눌러 AI 피팅을 체험해 보세요" arrow="up" align="left" className="px-4 mt-1" />
       </section>
 
       <section className="flex flex-col w-full items-start gap-2 px-4 py-4 grayscale">

@@ -1,5 +1,6 @@
 import { ArrowLeft, Home } from "lucide-react";
 import { Button } from "./ui/button";
+import { CoachBubble } from "./CoachBubble";
 
 interface AIFittingScreenProps {
   onClose?: () => void;
@@ -52,6 +53,7 @@ export const AIFittingScreen = ({ onClose, onInputClick }: AIFittingScreenProps)
       </div>
 
       <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] flex items-center justify-center px-4 pt-2.5 pb-6 bg-white border-t border-[#0000001a] z-[2]">
+        <CoachBubble text="입력하기를 눌러 체형 정보를 넣어 보세요" className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5" />
         <Button
           onClick={onInputClick}
           className="w-full py-[18px] bg-black hover:bg-black/90 rounded text-white text-base font-semibold tracking-[0] leading-[normal] h-auto"

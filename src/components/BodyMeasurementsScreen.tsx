@@ -2,6 +2,7 @@ import { ArrowLeft, Home } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState, useEffect } from "react";
 import { MeasurementGuideModal } from "./MeasurementGuideModal";
+import { CoachBubble } from "./CoachBubble";
 
 interface BodyMeasurementsScreenProps {
   onClose?: () => void;
@@ -217,6 +218,9 @@ export const BodyMeasurementsScreen = ({ onClose, onSaveClick, productType = "ma
                 </>
               )}
             </div>
+            {!selectedGender && (
+              <CoachBubble text="성별을 고르면 예시 체형이 자동으로 채워져요" arrow="up" align="left" className="mt-1" />
+            )}
           </div>
 
           <div className="grid grid-cols-2 gap-4">
@@ -365,6 +369,9 @@ export const BodyMeasurementsScreen = ({ onClose, onSaveClick, productType = "ma
       </div>
 
       <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] flex items-center justify-center px-4 pt-2.5 pb-6 bg-white border-t border-[#0000001a] z-[2]">
+        {selectedGender && (
+          <CoachBubble text="저장 후 AI 피팅하기를 눌러 결과를 확인하세요" className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5" />
+        )}
         <Button
           onClick={() => selectedGender && onSaveClick?.(selectedGender)}
           className={`w-full py-[18px] rounded text-base font-semibold tracking-[0] leading-[normal] h-auto ${

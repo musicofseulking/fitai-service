@@ -6,6 +6,7 @@ import { OrderScreen } from "./OrderScreen";
 import { CartScreen } from "./CartScreen";
 import { OrderCompleteScreen } from "./OrderCompleteScreen";
 import { FitGuideCards } from "./FitGuideCards";
+import { CoachBubble } from "./CoachBubble";
 
 interface AIFittingResultScreenFemale2Props {
   onClose?: () => void;
@@ -196,6 +197,7 @@ export const AIFittingResultScreenFemale2 = ({
             );
           })}
         </div>
+        <CoachBubble text="사이즈를 바꾸면 아래 AI 분석도 다시 나와요" arrow="up" className="flex justify-center -mt-1 mb-2" />
 
         <FitGuideCards
           productType="female2"
