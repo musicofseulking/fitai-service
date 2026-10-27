@@ -7,7 +7,7 @@ import {
   buildGeminiRequestBody,
   isFitGuide,
   type ProductType,
-} from "../src/lib/fitGuidePrompt";
+} from "../src/lib/fitGuidePrompt.js";
 
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ?? "https://musicofseulking.github.io")
   .split(",")
