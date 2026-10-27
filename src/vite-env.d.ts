@@ -1,7 +1,8 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly VITE_GEMINI_API_KEY?: string;
+  // 예: https://<vercel-project>.vercel.app/api/fit-guide  (Gemini 키는 서버에만 있음)
+  readonly VITE_FIT_API_URL?: string;
 }
 
 interface ImportMeta {
